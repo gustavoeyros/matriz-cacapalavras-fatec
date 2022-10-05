@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caça-Palavras</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+        <div class="letras">
+            <h2>Palavras:</h2>
+        <ul>
+            <li>
+                AUDI
+            </li>
+            <li>
+                BMW
+            </li>
+            <li>
+                JAGUAR
+            </li>
+            <li>
+                MINI
+            </li>
+            <li>
+                FIAT
+            </li>
+            <li>
+                FORD
+            </li>
+            <li>
+                HONDA
+            </li>
+            <li>
+                OPEL
+            </li>
+            <li>
+                JEEP
+            </li>
+            <li>
+                JAC
+            </li>
+        </ul>
+              
+        </div>
+        <div class="container">
+ 
+        <script>
+
+            /*palavras:
+            1- Audi
+            2- BMW
+            3- JAGUAR
+            4- MINI
+            5- FIAT
+            6- FORD
+            7- HONDA
+            8 - OPEL
+            9 - JEEP
+            10 - JAC
+            */
+
+
+            var palavras = new Array;
+            var palavras = [
+                ['A', 'U', 'D', 'I', 'B', 'M', 'W', 'H', 'I', 'J'],
+                ['A', 'B', 'C', 'D', 'J', 'A', 'G', 'U', 'A', 'R'],
+                ['M', 'I', 'N', 'I', 'P', 'R', 'I', 'H', 'I', 'J'],
+                ['J', 'A', 'C', 'D', 'E', 'F', 'I', 'A', 'T', 'J'],
+                ['A', 'F', 'O', 'R', 'D', 'H', 'O', 'N', 'D', 'A'],
+                ['O', 'P', 'E', 'L', 'J', 'E', 'E', 'P', 'I', 'A'],
+            ];
+            var resultado = "<table>"
+            for (var linha = 0; linha < 6; linha++) {
+                resultado += `<tr id='linha${[linha]}'>`;
+                for (var coluna = 0; coluna < 10; coluna++) {
+                    resultado += `<td id='coluna${[coluna]}'> ${palavras[linha][coluna]} </td>`;
+
+                }
+                resultado += "</tr>"
+            }
+
+            resultado += "</table>"
+            document.write(resultado)
+
+
+
+        </script>
+    </div>
+
+</body>
+
+</html>
